@@ -76,5 +76,19 @@ public class FizzBuzzFactoryTest {
                 .getFizzBuzzer(fizzBuzzType);
         assertTrue(buzzer instanceof FizzBuzz, "Object is not of type FizzBuzz");
     }
+
+    /**
+     * Test of getFizzBuzzer method, of class FizzBuzzFactory.
+     */
+    @org.junit.jupiter.api.Test
+    public void testGetLucky() {
+        System.out.println("getFizzBuzzer should return Lucky type if Lucky is passed");
+        String fizzBuzzType = "Lucky";
+        FizzBuzzFactory fizzBuzzFactory = new FizzBuzzFactory();
+        Fizz_Buzz_Or_FizzBuzzer expResult = null;
+        Fizz_Buzz_Or_FizzBuzzer buzzer = fizzBuzzFactory
+                .getFizzBuzzer(fizzBuzzType);
+        assertTrue(buzzer instanceof Lucky, "Object is not of type Lucky");
+    }
     
 }

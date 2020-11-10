@@ -14,11 +14,15 @@ public class FizzBuzzFactory {
     private Fizz fizz = new Fizz();
     private Buzz buzz = new Buzz();
     private FizzBuzz fizz_buzz = new FizzBuzz();
+    private Lucky lucky = new Lucky();
 
     public Fizz_Buzz_Or_FizzBuzzer getFizzBuzzer(String buzzType) {
         Fizz_Buzz_Or_FizzBuzzer buzzer = null;
 
-        if (buzzType.equalsIgnoreCase("Fizz")) {
+        if (buzzType.equalsIgnoreCase("Lucky")) {
+            buzzer = lucky;
+
+        } else if (buzzType.equalsIgnoreCase("Fizz")) {
             buzzer = fizz;
 
         } else if (buzzType.equalsIgnoreCase("Buzz")) {

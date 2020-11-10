@@ -3,7 +3,7 @@
  * To change this template file, choose Tools | Templates
  * and open the template in the editor.
  */
-package com.mycompany.fizzbuzz1;
+package com.mycompany.fizzbuzz2;
 
 import org.junit.jupiter.api.Test;
 import static org.junit.jupiter.api.Assertions.*;
@@ -16,8 +16,8 @@ public class FizzBuzzUtilsTest {
     private Integer FIZ_VALUE = 6;
     private Integer BUZZ_VALUE = 5;
     private Integer FIZBUZZ_VALUE = 15;
-    private Integer NON_FIZZBUZZ_VALUE = 13;
-    private Integer LUCKY_VALUE = 13333;
+    private Integer NON_FIZZBUZZ_VALUE = 19;
+    private Integer LUCKY_VALUE = 12123333;
 
     public FizzBuzzUtilsTest() {
     }
